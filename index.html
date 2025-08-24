@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Romme Records</title>
+<style>
+/* Grundinställningar */
+body {
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: normal;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #111;
+    padding: 12px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #bbb;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Sektioner */
+section {
+    margin-bottom: 80px;
+}
+
+/* Introtext */
+#intro p {
+    font-size: 1.5rem; /* lite större igen */
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+/* Rubriker */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #e0e0e0;
+    margin: 10px auto 0 auto;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+.card {
+    background: #222;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+}
+.card h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+.card p {
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* Kontakt */
+.contact p {
+    margin: 8px 0;
+}
+.contact .spacer {
+    margin-top: 25px; /* avstånd mellan Simon och Alexander */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+/* Responsiv design */
+@media (max-width: 600px) {
+    header h1 { font-size: 1.2rem; }
+    nav a { margin: 0 8px; font-size: 0.9rem; }
+    h2 { font-size: 1.6rem; }
+    #intro p { font-size: 1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Romme Records</h1>
+  <nav>
+    <a href="#services">Tjänster</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <section id="intro">
+    <p>Vi erbjuder högkvalitativa ljudlösningar för alla typer av evenemang i Dalarna med omnejd.</p>
+  </section>
+
+  <section id="services">
+    <h2>Våra tjänster</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Ljudsystem</h3>
+        <p>Högkvalitativa ljudsystem för små och stora evenemang. Vi arbetar främst med fabrikatet Prophon.</p>
+      </div>
+      <div class="card">
+        <h3>Ljudtekniker</h3>
+        <p>Erfarna ljudtekniker som säkerställer bästa ljudkvalitet.</p>
+      </div>
+      <div class="card">
+        <h3>Scenteknik</h3>
+        <p>Digitalt mixerbord 24 kanaler, mikrofoner, stativ, kablage mm. Vi arbetar med fabrikat som Allen & Heath, Shure, Sennheiser, Beyerdynamics mm.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <div class="contact">
+      <p>Simon Magnusson – Ljudtekniker</p>
+      <p>Telefon: 076 848 73 90</p>
+      <p>Email: rommerecords@gmail.com</p>
+
+      <div class="spacer"></div>
+
+      <p>Alexander Svensson – Systemtekniker</p>
+      <p>Telefon: 073 123 456</p>
+
+      <p>Vi finns i Romme, Borlänge.</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2025 Romme Records
+</footer>
+
+</body>
+</html>
